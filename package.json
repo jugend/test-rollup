@@ -1,0 +1,37 @@
+{
+  "name": "test-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "build:include-modules": "rollup -c ./rollup-include-modules.config.js",
+    "build:watch": "rollup -w",
+    "build:manual": "rollup src/main.js --file dist/bundle.js --format cjs,esm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugend/test-rollup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jugend/test-rollup/issues"
+  },
+  "homepage": "https://github.com/jugend/test-rollup#readme",
+  "dependencies": {
+    "pp-react": "^4.2.0",
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "rollup": "^1.12.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-resolve": "0.0.1-predev.1"
+  }
+}

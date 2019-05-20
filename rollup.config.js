@@ -1,6 +1,5 @@
 export default {
-  input: 'src/main.js',
-  external: ['react', 'pp-react'],
+  input: 'src/without-react.js',
   output: [
     {
       file: 'dist/bundle.cjs.js',
